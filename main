@@ -1,0 +1,16 @@
+package br.com.imc.pessoa;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Atelta objatleta = new Atelta("renataum",66,1.85,"natação");
+        Pessoa objpessoa = new Pessoa("renatim",200,1.60);
+        System.out.printf("O IMC do(a) %s eh = %.2f %n", objpessoa.getNome(),objpessoa.imc());
+        System.out.printf("O IMC do(a) %s eh = %.2f %n", objatleta.getNome(),objatleta.imc());
+
+
+    }
+
+
+}
