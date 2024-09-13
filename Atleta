@@ -1,0 +1,27 @@
+package br.com.imc.pessoa;
+
+public class Atelta extends Pessoa {
+
+    private String EsportePraticado;
+
+
+    public Atelta(String nome, double peso, double altura, String esportePraticado) {
+        super(nome, peso, altura);
+        EsportePraticado = esportePraticado;
+    }
+
+    public String getEsportePraticado() {
+        return EsportePraticado;
+    }
+
+    public void setEsportePraticado(String esportePraticado) {
+        EsportePraticado = esportePraticado;
+    }
+
+    @Override
+    public double imc() {
+        return super.imc() *0.95;
+
+    }
+}
+
